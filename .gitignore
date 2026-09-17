@@ -1,0 +1,18 @@
+# Exclude documents, scripts, and notes - only PHP/web code belongs here
+*.pdf
+*.docx
+*.doc
+*.md
+*.py
+*.txt
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor metadata
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
