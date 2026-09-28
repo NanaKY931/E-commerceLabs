@@ -1,0 +1,120 @@
+/* ============================================================
+   css/style.css  — shared styles for the whole EcomLab app
+   ============================================================ */
+
+/* --- Reset / base ----------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Header / nav ----------------------------------------- */
+header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 0 1.5rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header nav a { color: #cce0ff; }
+header nav a:hover { color: #fff; text-decoration: none; }
+header nav strong { color: #fff; font-size: 1.1rem; letter-spacing: .5px; }
+
+.nav-links { display: flex; align-items: center; gap: 1.2rem; font-size: .9rem; }
+.nav-links span { color: #8ab4d4; }
+
+/* --- Main content ----------------------------------------- */
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* --- Footer ----------------------------------------------- */
+footer {
+    text-align: center;
+    padding: .75rem;
+    font-size: .8rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+}
+
+/* --- Cards / forms ---------------------------------------- */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    padding: 2rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.card h1 { font-size: 1.4rem; margin-bottom: 1.25rem; color: #1a1a2e; }
+
+form div { margin-bottom: 1rem; }
+form label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .35rem; color: #555; }
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: .55rem .75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: .95rem;
+    transition: border-color .2s;
+}
+form input:focus { outline: none; border-color: #0066cc; }
+
+button {
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: .6rem 1.4rem;
+    font-size: .95rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+button:hover { background: #004fa3; }
+
+/* --- Feedback messages ------------------------------------ */
+.msg { margin-top: .75rem; font-size: .9rem; }
+.msg.success { color: #1e7e34; }
+.msg.error   { color: #c0392b; }
+
+/* --- Customers table -------------------------------------- */
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+th { background: #1a1a2e; color: #fff; padding: .65rem 1rem; text-align: left; font-size: .88rem; }
+td { padding: .6rem 1rem; border-bottom: 1px solid #eee; font-size: .9rem; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #f0f4ff; }
+
+/* --- Home page -------------------------------------------- */
+.home-welcome { text-align: center; padding: 3rem 1rem; }
+.home-welcome h1 { font-size: 2rem; color: #1a1a2e; margin-bottom: .75rem; }
+.home-welcome p  { color: #666; margin-bottom: 1.5rem; }
+.home-welcome .btn-group { display: flex; gap: 1rem; justify-content: center; }
+.home-welcome .btn-group a { padding: .65rem 1.5rem; border-radius: 5px; font-weight: 600; }
+.btn-primary { background: #0066cc; color: #fff !important; }
+.btn-primary:hover { background: #004fa3; text-decoration: none !important; }
+.btn-secondary { background: #eef2ff; color: #0066cc !important; border: 1px solid #c0d0f0; }
+.btn-secondary:hover { background: #dde6ff; text-decoration: none !important; }
