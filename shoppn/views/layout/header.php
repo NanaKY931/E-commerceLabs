@@ -30,7 +30,8 @@
                     <li><a href="/shoppn/views/account/my_account.php">My Account</a></li>
                     
                     <?php if (is_admin()): ?>
-                        <li><a href="/shoppn/views/admin/brand.php">Admin</a></li>
+                        <li><a href="/shoppn/views/admin/brand.php">Brand</a></li>
+                        <li><a href="/shoppn/views/admin/category.php">Category</a></li>
                     <?php endif; ?>
                     
                     <li><a href="/shoppn/logout.php">Logout</a></li>
