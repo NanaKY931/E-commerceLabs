@@ -14,7 +14,7 @@ require_login(); // Access control — redirects to login if not authenticated
       <li><strong>Role:</strong> <?= ($_SESSION['user_role'] == 1) ? 'Admin' : 'Customer' ?></li>
     </ul>
 
-    <a href="/shoppn/logout.php" class="btn-submit" style="display:inline-block;margin-top:1.5rem;">Logout</a>
+    <a href="<?= ROOT_URL ?>logout.php" class="btn-submit" style="display:inline-block;margin-top:1.5rem;">Logout</a>
   </div>
 </main>
 

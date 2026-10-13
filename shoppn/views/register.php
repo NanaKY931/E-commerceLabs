@@ -68,7 +68,7 @@ unset($_SESSION['error']);
       </button>
     </form>
 
-    <p class="auth-switch">Already have an account? <a href="/shoppn/views/login.php">Login</a></p>
+    <p class="auth-switch">Already have an account? <a href="<?= ROOT_URL ?>views/login.php">Login</a></p>
   </div>
 </main>
 

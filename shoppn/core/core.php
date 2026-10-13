@@ -4,6 +4,14 @@ date_default_timezone_set('Africa/Accra'); // Common timezone for the region bas
 
 require_once __DIR__ . '/db_class.php';
 
+// Define ROOT_URL dynamically
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+$host = $_SERVER['HTTP_HOST'];
+$script = $_SERVER['SCRIPT_NAME'];
+$pos = strpos($script, '/shoppn/');
+$rootUrl = $pos !== false ? $protocol . "://" . $host . substr($script, 0, $pos) . '/shoppn/' : '/shoppn/';
+define('ROOT_URL', $rootUrl);
+
 // Helper function to get client IP
 function get_ip() {
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {

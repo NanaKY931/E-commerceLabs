@@ -4,6 +4,6 @@
     </footer>
     
     <!-- Scripts -->
-    <script src="/shoppn/js/validate.js"></script>
+    <script src="<?= ROOT_URL ?>js/validate.js"></script>
 </body>
 </html>
