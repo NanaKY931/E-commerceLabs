@@ -35,7 +35,7 @@ function ftp_mksubdirs($ftpcon, $ftpbasedir, $ftpath) {
 function sync_dir($conn_id, $local_dir, $remote_dir, $base_local) {
     $dir = opendir($local_dir);
     while ($file = readdir($dir)) {
-        if ($file == '.' || $file == '..' || $file == '.git' || $file == 'deploy.php' || $file == '.gitignore' || $file == '__MACOSX' || $file == 'future_tasks') {
+        if ($file == '.' || $file == '..' || $file == '.git' || $file == 'deploy.php' || $file == 'deploy_fix.php' || $file == 'deploy_task9.php' || $file == '.gitignore' || $file == '__MACOSX' || $file == 'future_tasks' || $file == 'ui_templates') {
             continue;
         }
         $local_file = $local_dir . DIRECTORY_SEPARATOR . $file;

@@ -14,5 +14,6 @@ desktop.ini
 # Editor metadata
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
+# Internal design references & templates
+ui_templates/
+future_tasks/
